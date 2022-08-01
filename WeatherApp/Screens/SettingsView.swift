@@ -25,7 +25,6 @@ struct SettingsView: View {
                 }
             }
                 Section {
-
                     Picker("Derece Seçimi", selection: $preferredTemperaturesChanger.preferredTemperatures ) {
                         ForEach(PreferredTemperatures.allCases, id: \.self) { value in
                             Text(value.localizedName)
