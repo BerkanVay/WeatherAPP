@@ -17,7 +17,7 @@
 		DA7268E2288306280052D5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7268E1288306280052D5B5 /* Assets.xcassets */; };
 		DA7268E5288306280052D5B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7268E4288306280052D5B5 /* Preview Assets.xcassets */; };
 		DA7C9B2B288D7B7700086B7D /* CurrentPlaceWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C9B2A288D7B7700086B7D /* CurrentPlaceWeatherView.swift */; };
-		DA9283822889C30C00F3D56D /* EmreTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9283812889C30C00F3D56D /* EmreTestView.swift */; };
+		DA9283822889C30C00F3D56D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9283812889C30C00F3D56D /* TestView.swift */; };
 		DA928384288A186F00F3D56D /* HourlyWeatherScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA928383288A186F00F3D56D /* HourlyWeatherScrollView.swift */; };
 		DAA9AD4D288A7E7E00BBF90A /* DailyWeatherListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA9AD4C288A7E7E00BBF90A /* DailyWeatherListView.swift */; };
 		DACC4D872897CE1700811841 /* PreferredTemperatureChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC4D862897CE1700811841 /* PreferredTemperatureChanger.swift */; };
@@ -45,7 +45,7 @@
 		DA7268E4288306280052D5B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA7268ED288308D80052D5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA7C9B2A288D7B7700086B7D /* CurrentPlaceWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlaceWeatherView.swift; sourceTree = "<group>"; };
-		DA9283812889C30C00F3D56D /* EmreTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmreTestView.swift; sourceTree = "<group>"; };
+		DA9283812889C30C00F3D56D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DA928383288A186F00F3D56D /* HourlyWeatherScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherScrollView.swift; sourceTree = "<group>"; };
 		DAA9AD4C288A7E7E00BBF90A /* DailyWeatherListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherListView.swift; sourceTree = "<group>"; };
 		DACC4D862897CE1700811841 /* PreferredTemperatureChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredTemperatureChanger.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				DA2A0229288DC8C2009967C9 /* TrackingSubViews */,
 				DAD78CDA288ACCEC00C7E920 /* DailyWeatherDetailView.swift */,
 				DA2A022B288DC97F009967C9 /* SettingsView.swift */,
-				DA9283812889C30C00F3D56D /* EmreTestView.swift */,
+				DA9283812889C30C00F3D56D /* TestView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				DA31D06228831C6500BC3858 /* WeatherRESTClient.swift in Sources */,
 				DACC4D872897CE1700811841 /* PreferredTemperatureChanger.swift in Sources */,
 				DAA9AD4D288A7E7E00BBF90A /* DailyWeatherListView.swift in Sources */,
-				DA9283822889C30C00F3D56D /* EmreTestView.swift in Sources */,
+				DA9283822889C30C00F3D56D /* TestView.swift in Sources */,
 				DA31D064288328CD00BC3858 /* WeatherModel.swift in Sources */,
 				DAE4109B2886CC0800EF3547 /* SplashView.swift in Sources */,
 				DAE410A12886E2A600EF3547 /* RequestLocationView.swift in Sources */,

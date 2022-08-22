@@ -1,5 +1,5 @@
 //
-//  EmreTestView.swift
+//  TestView.swift
 //  WeatherApp
 //
 //  Created by Mustafa Berkan Vay on 21.07.2022.
