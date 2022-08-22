@@ -14,8 +14,8 @@ class WeatherRESTClient {
     
     private static let jsonDecoder = JSONDecoder()
     
-    static func getWeather(lat: Double, lon: Double) async throws -> WeatherResponse {
-        let requestString = "https://api.openweathermap.org/data/2.5/onecall?lat=\(lat)&lon=\(lon)&exclude=minutely&lang=tr&units=metric&appid=cfed8600de9d4cc1e03a9700924af1c6"
+    static func getWeather(lat: Double, lon: Double, temperatureAPIKey: String) async throws -> WeatherResponse {
+        let requestString = "https://api.openweathermap.org/data/2.5/onecall?lat=\(lat)&lon=\(lon)&exclude=minutely&lang=tr&units=\(temperatureAPIKey)&appid=cfed8600de9d4cc1e03a9700924af1c6"
         print(requestString)
         
         return try await doRequest(withURLString: requestString)

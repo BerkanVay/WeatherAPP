@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var locationViewModel = LocationViewModel()
-   
+        
     var body: some View {
         switch locationViewModel.authorizationStatus {
         case .notDetermined:

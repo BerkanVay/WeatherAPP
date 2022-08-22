@@ -11,7 +11,7 @@ import SwiftUI
 struct SettingsView: View {
     
     @EnvironmentObject var preferredColorSchemeChanger: PreferredColorSchemeChanger
-    @EnvironmentObject var preferredTemperaturesChanger: PreferredTemperaturesChanger
+    @EnvironmentObject var preferredTemperatureChanger: PreferredTemperatureChanger
     
     
     var body: some View {
@@ -25,8 +25,8 @@ struct SettingsView: View {
                 }
             }
                 Section {
-                    Picker("Derece Seçimi", selection: $preferredTemperaturesChanger.preferredTemperatures ) {
-                        ForEach(PreferredTemperatures.allCases, id: \.self) { value in
+                    Picker("Derece Seçimi", selection: $preferredTemperatureChanger.preferredTemperature ) {
+                        ForEach(PreferredTemperature.allCases, id: \.self) { value in
                             Text(value.localizedName)
                         }
                     }

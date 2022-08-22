@@ -19,7 +19,9 @@ struct HourlyWeatherScrollView: View {
                     } else {
                         HourlyWeatherView(dayTime: hourly.dt, iconId: hourly.weather[0].icon, temperature: Int(hourly.temp))
                     }
+                    
                 }
+                
             }
         }
     }
@@ -35,8 +37,9 @@ struct HourlyWeatherView: View {
             AsyncImage(url: URL(string: "https://openweathermap.org/img/wn/\(iconId)@2x.png"))
                 .frame(width: 40, height: 40, alignment: .center)
                 .scaledToFit()
+                .padding(20)
             if dayTime == 0 {
-                Text("Şu An")
+                Text("Şu an")
             } else {
                 Text(
                     Date(
@@ -46,7 +49,6 @@ struct HourlyWeatherView: View {
             }
             Text("\(temperature) °")
         }
-        .padding(20)
         
     }
 }

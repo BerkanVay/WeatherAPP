@@ -34,3 +34,4 @@ struct CurrentPlaceWeatherView: View {
         .foregroundColor(.white)
     }
 }
+

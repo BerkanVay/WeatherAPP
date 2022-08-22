@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct WeatherAppApp: App {
     @StateObject var preferredColorSchemeChanger = PreferredColorSchemeChanger()
-    @StateObject var preferredTemperaturesChanger = PreferredTemperaturesChanger()
+    @StateObject var preferredTemperaturesChanger = PreferredTemperatureChanger()
     var body: some Scene {
         WindowGroup {
             SplashScreen()

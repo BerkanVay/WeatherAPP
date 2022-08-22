@@ -7,9 +7,11 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    
+    @EnvironmentObject var preferredTemperatureChanger: PreferredTemperatureChanger
+
     @Published var authorizationStatus: CLAuthorizationStatus
     @Published var lastSeenLocation: CLLocation?
     @Published var currentPlacemark: CLPlacemark?
@@ -28,7 +30,7 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             return
         }
         
-        let result = try? await WeatherRESTClient.getWeather(lat: lastSeenLocation.coordinate.latitude, lon: lastSeenLocation.coordinate.longitude)
+        let result = try? await WeatherRESTClient.getWeather(lat: lastSeenLocation.coordinate.latitude, lon: lastSeenLocation.coordinate.longitude, temperatureAPIKey: "metric")
         
         DispatchQueue.main.async {
             self.weatherData = result
