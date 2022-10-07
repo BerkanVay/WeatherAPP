@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EmreTestView: View {
     @State var selection = 4
-    @State var items = [0, 1, 2, 3, 4]
+    @State var items = [0, 1, 2, 3, 4,5,6,7,8]
     @State var show = false
     
     var body: some View {

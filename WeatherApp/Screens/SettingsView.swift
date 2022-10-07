@@ -18,6 +18,7 @@ struct SettingsView: View {
         VStack{
             List{
                 Section {
+                  
                     Picker("Tema Seçimi", selection: $preferredColorSchemeChanger.preferredColorScheme ) {
                     ForEach(PreferredColorScheme.allCases, id: \.self) { value in
                         Text(value.localizedName)

@@ -16,12 +16,13 @@ struct DailyWeatherDetailView: View {
                 Text(Date(timeIntervalSince1970: TimeInterval(data.dt)),
                      format: .dateTime.month().day().weekday(.wide))
                 }
+              
                 Section("Hissedilen Sıcaklık"){
                     Text("En yüksek: \(Int(data.temp.max)) °")
                     Text("En düşük: \(Int(data.temp.min)) °")
                     Text("Sabah: \(Int(data.temp.morn)) °")
                     Text("Öğlen: \(Int(data.temp.eve)) °")
-                    Text("Akşam: \(Int(data.temp.night)) °")
+                    Text("Akşammmmm: \(Int(data.temp.night)) °")
                 }
                 Section("Diğer Bilgiler"){
                     Text("Rüzgar Hızı: \(Int(data.windSpeed)) km/sa")
