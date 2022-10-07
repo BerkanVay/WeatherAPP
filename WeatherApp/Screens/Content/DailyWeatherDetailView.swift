@@ -22,7 +22,7 @@ struct DailyWeatherDetailView: View {
                     Text("En düşük: \(Int(data.temp.min)) °")
                     Text("Sabah: \(Int(data.temp.morn)) °")
                     Text("Öğlen: \(Int(data.temp.eve)) °")
-                    Text("Akşammmmm: \(Int(data.temp.night)) °")
+                    Text("Akşam: \(Int(data.temp.night)) °")
                 }
                 Section("Diğer Bilgiler"){
                     Text("Rüzgar Hızı: \(Int(data.windSpeed)) km/sa")
