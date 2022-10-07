@@ -87,6 +87,7 @@
 				DAE410A02886E2A500EF3547 /* RequestLocationView.swift */,
 			);
 			name = ContentSubViews;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DA7268D1288306270052D5B5 = {
@@ -131,12 +132,10 @@
 		DAE410A42886E41400EF3547 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				DAE4109A2886CC0800EF3547 /* SplashView.swift */,
-				DA7268DF288306270052D5B5 /* ContentView.swift */,
-				DA2A022A288DC8EF009967C9 /* ContentSubViews */,
-				DA2A0229288DC8C2009967C9 /* TrackingSubViews */,
-				DAD78CDA288ACCEC00C7E920 /* DailyWeatherDetailView.swift */,
-				DA2A022B288DC97F009967C9 /* SettingsView.swift */,
+				DAFB04AE28F01CE80099185F /* Splash */,
+				DAFB04AD28F01CD20099185F /* Content */,
+				DAFB04B028F01D120099185F /* Tracking */,
+				DAFB04AF28F01CFA0099185F /* Setting */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -192,6 +191,40 @@
 				DA31D063288328CD00BC3858 /* WeatherModel.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DAFB04AD28F01CD20099185F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA7268DF288306270052D5B5 /* ContentView.swift */,
+				DAD78CDA288ACCEC00C7E920 /* DailyWeatherDetailView.swift */,
+				DA2A022A288DC8EF009967C9 /* ContentSubViews */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		DAFB04AE28F01CE80099185F /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				DAE4109A2886CC0800EF3547 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		DAFB04AF28F01CFA0099185F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A022B288DC97F009967C9 /* SettingsView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		DAFB04B028F01D120099185F /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A0229288DC8C2009967C9 /* TrackingSubViews */,
+			);
+			path = Tracking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
