@@ -9,13 +9,13 @@ import SwiftUI
 
 @main
 struct WeatherAppApp: App {
-    @StateObject var preferredColorSchemeChanger = PreferredColorSchemeChanger()
-    @StateObject var preferredTemperaturesChanger = PreferredTemperatureChanger()
-    var body: some Scene {
-        WindowGroup {
-            SplashScreen()
-                .preferredColorScheme(preferredColorSchemeChanger.preferredColorScheme.colorScheme).environmentObject(preferredColorSchemeChanger)
-                .environmentObject(preferredTemperaturesChanger)
-        }
+  @StateObject var preferredColorSchemeChanger = PreferredColorSchemeChanger()
+  @StateObject var preferredTemperaturesChanger = PreferredTemperatureChanger()
+  var body: some Scene {
+    WindowGroup {
+      SplashScreen()
+        .preferredColorScheme(preferredColorSchemeChanger.preferredColorScheme.colorScheme).environmentObject(preferredColorSchemeChanger)
+        .environmentObject(preferredTemperaturesChanger)
     }
+  }
 }
